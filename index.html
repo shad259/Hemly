@@ -3,34 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <Hemly>Hemly</Hemly>
+    <title>خیاطی آنلاین | هنر دوخت و دوز</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <style>
-        body { font-family: 'Tahoma', sans-serif; background-color: #fcf8f8; }
-        .hero { background: #6c757d; color: white; padding: 60px 0; border-bottom: 5px solid #d63384; }
+        /* تنظیمات کلی فونت و پس‌زمینه ملایم */
+        body { font-family: 'Tahoma', sans-serif; background-color: #f7fdf7; color: #333; }
+        
+        /* هدر با رنگ سبز یشمی تیره */
+        .hero { background: #1b5e20; color: white; padding: 70px 0; border-bottom: 5px solid #66bb6a; }
+        .hero h1 { font-size: 3.5rem; font-weight: bold; }
+        .hero p { opacity: 0.9; font-size: 1.2rem; }
+
+        /* استایل کارت‌های نمونه کار */
+        .card { border: none; border-radius: 15px; overflow: hidden; }
         .card-img-top { height: 300px; object-fit: cover; }
-        .whatsapp-btn { position: fixed; bottom: 20px; right: 20px; z-index: 1000; }
+        .card-title { color: #1b5e20; font-weight: bold; }
+        .card-text { font-size: 0.95rem; }
+
+        /* دکمه‌های سبز زمردی */
+        .btn-green { background-color: #2e7d32; color: white; border-radius: 25px; font-weight: bold; }
+        .btn-green:hover { background-color: #1b5e20; color: white; }
+
+        /* دکمه شناور واتس‌اپ با رنگ سبز */
+        .whatsapp-btn { position: fixed; bottom: 20px; right: 20px; z-index: 1000; font-weight: bold; }
+        .bi-whatsapp { font-size: 1.2rem; }
+        
+        /* فوتر */
+        footer { background: #113612; color: #a5d6a7; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
-    <header class="hero text-center">
+    <header class="hero text-center shadow">
         <div class="container">
-            <h1 class="display-4">Hemly</h1>
-            <p class="lead">  دوخت انواع ملحفه، روتشکی،‌ روبالشتی، کوسن، دستمال سفره، رومیزی. </p>
+            <h1 class="display-4">مزون و خیاطی آنلاین</h1>
+            <p class="lead">دوخت انواع لباس‌های مجلسی، مانتو و کت با بهترین کیفیت و ظرافت</p>
         </div>
     </header>
 
     <main class="container my-5">
-        <h2 class="text-center mb-4">نمونه کارهای من</h2>
+        <h2 class="text-center mb-5" style="color: #1b5e20;">آخرین نمونه کارهای من</h2>
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="card h-100 shadow-sm">
-                    <img src="dress1.jpg" class="card-img-top" alt="نمونه لباس">
+                    <img src="dress1.jpg" class="card-img-top" alt="نمونه لباس شب">
                     <div class="card-body text-center">
                         <h5 class="card-title">لباس مجلسی شب</h5>
-                        <p class="card-text text-muted">دوخت سفارشی با پارچه کرپ</p>
+                        <p class="card-text text-muted small">دوخت سفارشی با پارچه کرپ یزدی</p>
+                        <a href="https://wa.me/989123456789" class="btn btn-green px-4" target="_blank">جزییات و سفارش</a>
                     </div>
                 </div>
             </div>
@@ -39,28 +60,32 @@
                     <img src="dress2.jpg" class="card-img-top" alt="نمونه مانتو">
                     <div class="card-body text-center">
                         <h5 class="card-title">مانتو پاییزه</h5>
-                        <p class="card-text text-muted">طراحی اختصاصی متناسب با سایز شما</p>
+                        <p class="card-text text-muted small">طراحی اختصاصی با پارچه کتان</p>
+                        <a href="https://wa.me/989123456789" class="btn btn-green px-4" target="_blank">جزییات و سفارش</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card h-100 shadow-sm">
-                    <img src="dress3.jpg" class="card-img-top" alt="نمونه کت">
+                    <img src="dress3.jpg" class="card-img-top" alt="نمونه کت و شلوار">
                     <div class="card-body text-center">
                         <h5 class="card-title">کت و شلوار زنانه</h5>
-                        <p class="card-text text-muted">دوخت صنعتی و تمیز</p>
+                        <p class="card-text text-muted small">دوخت صنعتی و بسیار تمیز</p>
+                        <a href="https://wa.me/989123456789" class="btn btn-green px-4" target="_blank">جزییات و سفارش</a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <a href="https://wa.me/+460739412441" class="btn btn-success rounded-pill whatsapp-btn shadow-lg py-3 px-4" target="_blank">
-        <i class="bi bi-whatsapp me-2"></i> ثبت سفارش در واتس‌اپ
+    <a href="https://wa.me/989123456789" class="btn btn-success rounded-pill whatsapp-btn shadow-lg py-3 px-4" target="_blank">
+        <i class="bi bi-whatsapp me-2"></i> ثبت سفارش سریع در واتس‌اپ
     </a>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>© ۲۰۲۶ | تمامی حقوق محفوظ است</p>
+    <footer class="text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">© ۲۰۲۶ | تمامی حقوق برای مزون و خیاطی محفوظ است</p>
+        </div>
     </footer>
 
 </body>
